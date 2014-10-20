@@ -19,7 +19,11 @@ func main() {
 
     //route paths
     router.HandleFunc("/", home.Root).Methods("GET")
-    router.PathPrefix("/posts").Subrouter(postal.PostalRouter)
+    api := router.PathPrefix("/api").Subrouter()
+
+    //posts
+    posts_router := api.PathPrefix("/posts").Subrouter()
+    posts_router.HandleFunc("/", postal.GetPosts)
     
     http.Handle("/",router)
     //end of route management

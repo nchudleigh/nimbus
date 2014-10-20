@@ -3,14 +3,9 @@ package postal
 import (
     "fmt"
     "net/http"
-    "html/template"
-    "log"
 )
 
-func PostalRouter(){
-
-}
-
-func GetPost(w http.ResponseWriter, r *http.Request) {
-
+func GetPosts(w http.ResponseWriter, r *http.Request) {
+//return requested post
+    fmt.Println("Getting posts...")
 }
