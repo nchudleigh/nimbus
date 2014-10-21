@@ -34,7 +34,7 @@ func main() {
 
     //listen
     fmt.Println("Listening...")
-    err := http.ListenAndServe(":5000", nil)
+    err := http.ListenAndServe(":80", nil)
     if err != nil {
         log.Fatal("ListenAndServe:", err)
     }
