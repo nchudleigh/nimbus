@@ -9,22 +9,20 @@
     </head>
     <body>
 
-    <div class="background-container">
-        <main></main>
-    </div>
+    <div ui-view="header"></div>
+    <div ui-view="current" class="background-container"></div>
 
     </div>
     <!-- Footer -->
     <div class="collapse tycho footer">
         <div class="large-12 medium-12 small-12 columns" style="color:#dcd9c6; height:10rem;">
-            <div class="footer" style="margin-bottom:1rem;">
-                Built with golang and angularjs
-            </div>
         </div>
     </div>
     <script type="text/javascript" src="/static/js/angular/angular.js"></script>
+    <script type="text/javascript" src="/static/js/nimbus/controllers/main/main.js"></script>
+    <script type="text/javascript" src="/static/js/nimbus/controllers/cai/cai.js"></script>
+    <script type="text/javascript" src="/static/js/uirouter/uirouter.js"></script>
     <script type="text/javascript" src="/static/js/nimbus/app.js"></script>
-    <script type="text/javascript" src="/static/js/nimbus/directives/main/main.js"></script>
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
